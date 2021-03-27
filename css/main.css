@@ -5,15 +5,21 @@
 }
 html{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;    
 }
 
 /* Estilos del header*/
-
+a{
+    text-decoration: none;
+    color: black;
+    cursor:pointer;
+    font-size: 1.3rem;
+}
 .header{
     width: 100%;
     height: 10vh;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     padding: 0.6rem;
     font-family: 1.3rem;
@@ -22,21 +28,26 @@ html{
     display: flex;
     align-items: center;
 }
-
-.header_nav ul li{
+.header_nav li{
     display: inline-block;
-    padding-left: 1.5rem;
+    padding: 1.5rem;
 }
 .header_nav_perfil img{
-    border-radius: 2.5rem;
-
+    border-radius: 50%;
+    
 }
-.header_nav_text a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;
+.menu_icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');  
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:contain;
+    width:2.5rem;
+    height: 2.5rem;
 }
-
+.menu_icon:hover{
+    border-radius: 50%;
+    background-color: rgba(60,64,67,0.08);
+}
 /* Estilos del main content*/
 
 .main{
@@ -51,52 +62,88 @@ html{
 .main section{
     padding:2.0rem
 }
-
+.main_container_buscador{
+    width: 100%;
+}
 .main_buscador{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .main_buscador_botones{
-    
-    padding-top: 1.8rem;
-    
-}
-
-.main_buscador_frame{
+    width: 53.0rem;
     display: flex;
     justify-content: center;
+    padding-top: 1.8rem;   
+}
+.main_buscador_frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 4.4rem;
-    width: 58.2rem;
-    border-color: grey;
-    border-width: 0.1rem;
-    border-style: solid;
-    border-radius: 2.5rem;
+    width: 58.3rem;
+    border: 0.1rem solid #dfe1e5;
+    border-radius: 5.0rem;
 }
 .buscador{
+    font-size: 1.6rem;
+    height: 100%;
     width: 85%;
     border: none;
+    outline: none;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
 }
+.main_buscador_frame:hover{
+    box-shadow: 0 0.1rem 0.6rem 0 #939397;
+    
+
+}
+.search_icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.micro_icon{
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
 .boton{
-    width: 15.3rem;
-    height: 3.6rem;
+    width:16.7rem;
+    height:3.6rem;
     border:none;
-    padding: ;
-    margin: 1.5rem 0.4rem;
-    font-size: 1.5rem;
+    margin:1.5rem 0.7rem;
+    font-size:1.5rem;
+    background-color:#f8f8f8;
+    border-radius:0.4rem;
+}
+.boton:hover{
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem rgba(0,0,0,0.1)
+    color: #222;
+    background-color: #f8f8f8
 }
 .main_footer{
     font-size: 1.3rem;
 }
 .main_footer a{
     text-decoration: none;
+    color: #1a0dab;
 }
 
 /* Estilos del footer*/
 .footer{
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     display: flex;
     flex-direction: column;
@@ -109,12 +156,12 @@ html{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 4.8rem;
+    height: 50%;
     padding: 1.5rem 3.0rem;
 }
-
-
 .footer_foot{
+    width: 100%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,7 +169,6 @@ html{
     font-size: 1.4rem;
 
 }
-
 .footer_foot li{
     list-style: none;   
     padding: 1.5rem;
@@ -130,12 +176,16 @@ html{
 .footer_foot a{
     color: #0000008a;;
     text-decoration: none;
+    font-size: 1.4rem;
+}
+.footer_foot a:hover{
+    text-decoration: underline;
 }
 .footer_foot_left{
     display: flex;
-    justify-content: left;
+    align-items: center;
 }
 .footer_foot_right{
     display: flex;
-    justify-content: right;
+    align-items: center;
 }
