@@ -1,2 +1,2 @@
-# Google-clone-practica-
-Practica de HTML y CSS con proyecto google clone 
+# Google-clone-practica
+Mi primera practica de HTML Y CSS
